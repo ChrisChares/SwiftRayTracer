@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		830C128327C3506000A20201 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830C128227C3506000A20201 /* AppDelegate.swift */; };
+		830C128527C3506000A20201 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830C128427C3506000A20201 /* ViewController.swift */; };
+		830C128727C3506300A20201 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830C128627C3506300A20201 /* Assets.xcassets */; };
+		830C128A27C3506300A20201 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830C128827C3506300A20201 /* Main.storyboard */; };
+		835BCC6C27C3510F001CE2EE /* Lighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835BCC6A27C3510F001CE2EE /* Lighting.swift */; };
+		835BCC6D27C3510F001CE2EE /* RayTracer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835BCC6B27C3510F001CE2EE /* RayTracer.swift */; };
+		835BCC7027C3512D001CE2EE /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835BCC6E27C3512D001CE2EE /* Colors.swift */; };
+		835BCC7127C3512D001CE2EE /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835BCC6F27C3512D001CE2EE /* Scene.swift */; };
+		835BCC7427C35143001CE2EE /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835BCC7227C35143001CE2EE /* CanvasView.swift */; };
+		835BCC7527C35143001CE2EE /* Bitmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835BCC7327C35143001CE2EE /* Bitmap.swift */; };
+		835BCC7727C4CF75001CE2EE /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835BCC7627C4CF75001CE2EE /* Models.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		830C127F27C3506000A20201 /* CPURayTracer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CPURayTracer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		830C128227C3506000A20201 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		830C128427C3506000A20201 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		830C128627C3506300A20201 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		830C128927C3506300A20201 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		830C128B27C3506300A20201 /* CPURayTracer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CPURayTracer.entitlements; sourceTree = "<group>"; };
+		835BCC6A27C3510F001CE2EE /* Lighting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lighting.swift; sourceTree = "<group>"; };
+		835BCC6B27C3510F001CE2EE /* RayTracer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RayTracer.swift; sourceTree = "<group>"; };
+		835BCC6E27C3512D001CE2EE /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		835BCC6F27C3512D001CE2EE /* Scene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		835BCC7227C35143001CE2EE /* CanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		835BCC7327C35143001CE2EE /* Bitmap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bitmap.swift; sourceTree = "<group>"; };
+		835BCC7627C4CF75001CE2EE /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		830C127C27C3506000A20201 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		830C127627C3506000A20201 = {
+			isa = PBXGroup;
+			children = (
+				830C128127C3506000A20201 /* CPURayTracer */,
+				830C128027C3506000A20201 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		830C128027C3506000A20201 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				830C127F27C3506000A20201 /* CPURayTracer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		830C128127C3506000A20201 /* CPURayTracer */ = {
+			isa = PBXGroup;
+			children = (
+				830C129127C350C200A20201 /* Rendering */,
+				830C128227C3506000A20201 /* AppDelegate.swift */,
+				830C128427C3506000A20201 /* ViewController.swift */,
+				830C128627C3506300A20201 /* Assets.xcassets */,
+				830C128827C3506300A20201 /* Main.storyboard */,
+				830C128B27C3506300A20201 /* CPURayTracer.entitlements */,
+			);
+			path = CPURayTracer;
+			sourceTree = "<group>";
+		};
+		830C129127C350C200A20201 /* Rendering */ = {
+			isa = PBXGroup;
+			children = (
+				83C2773B27D1ED99006B6B13 /* Primitives */,
+				83C2773A27D1ED74006B6B13 /* Scene */,
+				83C2773927D1ED63006B6B13 /* View */,
+				835BCC6B27C3510F001CE2EE /* RayTracer.swift */,
+			);
+			path = Rendering;
+			sourceTree = "<group>";
+		};
+		83C2773927D1ED63006B6B13 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				835BCC7327C35143001CE2EE /* Bitmap.swift */,
+				835BCC7227C35143001CE2EE /* CanvasView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		83C2773A27D1ED74006B6B13 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				835BCC6F27C3512D001CE2EE /* Scene.swift */,
+				835BCC6A27C3510F001CE2EE /* Lighting.swift */,
+				835BCC7627C4CF75001CE2EE /* Models.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		83C2773B27D1ED99006B6B13 /* Primitives */ = {
+			isa = PBXGroup;
+			children = (
+				835BCC6E27C3512D001CE2EE /* Colors.swift */,
+			);
+			path = Primitives;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		830C127E27C3506000A20201 /* CPURayTracer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 830C128E27C3506300A20201 /* Build configuration list for PBXNativeTarget "CPURayTracer" */;
+			buildPhases = (
+				830C127B27C3506000A20201 /* Sources */,
+				830C127C27C3506000A20201 /* Frameworks */,
+				830C127D27C3506000A20201 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CPURayTracer;
+			productName = CPURayTracer;
+			productReference = 830C127F27C3506000A20201 /* CPURayTracer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		830C127727C3506000A20201 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					830C127E27C3506000A20201 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 830C127A27C3506000A20201 /* Build configuration list for PBXProject "CPURayTracer" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 830C127627C3506000A20201;
+			productRefGroup = 830C128027C3506000A20201 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				830C127E27C3506000A20201 /* CPURayTracer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		830C127D27C3506000A20201 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830C128727C3506300A20201 /* Assets.xcassets in Resources */,
+				830C128A27C3506300A20201 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		830C127B27C3506000A20201 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830C128527C3506000A20201 /* ViewController.swift in Sources */,
+				835BCC7427C35143001CE2EE /* CanvasView.swift in Sources */,
+				835BCC7027C3512D001CE2EE /* Colors.swift in Sources */,
+				835BCC7127C3512D001CE2EE /* Scene.swift in Sources */,
+				835BCC7527C35143001CE2EE /* Bitmap.swift in Sources */,
+				830C128327C3506000A20201 /* AppDelegate.swift in Sources */,
+				835BCC7727C4CF75001CE2EE /* Models.swift in Sources */,
+				835BCC6C27C3510F001CE2EE /* Lighting.swift in Sources */,
+				835BCC6D27C3510F001CE2EE /* RayTracer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		830C128827C3506300A20201 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				830C128927C3506300A20201 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		830C128C27C3506300A20201 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		830C128D27C3506300A20201 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		830C128F27C3506300A20201 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CPURayTracer/CPURayTracer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.chares.CPURayTracer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		830C129027C3506300A20201 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CPURayTracer/CPURayTracer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.chares.CPURayTracer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		830C127A27C3506000A20201 /* Build configuration list for PBXProject "CPURayTracer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				830C128C27C3506300A20201 /* Debug */,
+				830C128D27C3506300A20201 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		830C128E27C3506300A20201 /* Build configuration list for PBXNativeTarget "CPURayTracer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				830C128F27C3506300A20201 /* Debug */,
+				830C129027C3506300A20201 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 830C127727C3506000A20201 /* Project object */;
+}
